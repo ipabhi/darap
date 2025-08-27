@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yugal Homestay - Sikkim</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        color: #333;
+      }
+      header {
+        background: url('./asset/Pelling-Sky-Walk-25-mod-1.png') no-repeat
+          center center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: relative;
+      }
+      header::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+      }
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 800px;
+        padding: 1rem;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1.5s ease forwards;
+      }
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .hero-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+      .hero-content p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        font-weight: 400;
+      }
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+      .contact-info a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+      }
+      .contact-info .cta-button {
+        background: #ffcc00;
+        color: #333;
+        text-decoration: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: background 0.3s ease;
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1.5s ease forwards;
+        animation-delay: 0.8s;
+      }
+      .cta-button:hover {
+        background: #e6b800;
+      }
+      @media (min-width: 768px) {
+        .hero-content h1 {
+          font-size: 3.5rem;
+        }
+        .hero-content p {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Full Page Hero Banner -->
+    <header>
+      <div class="hero-content">
+        <h1>Yugal Homestay</h1>
+        <h3>Peaceful & Authentic Homestay Experiences in Darap, West Sikkim</h3>
+        <p>
+          Experience the tranquility of the Himalayas at our homestay in Darap,
+          Sikkim. Immerse yourself in authentic Sikkimese culture, savor local
+          cuisines, and enjoy breathtaking views.
+        </p>
+
+        <div class="contact-info">
+          <a href="tel:+91 8240251258">📞 +91 8240251258</a>
+          <a href="tel:+91 8910821358">📞 +91 8910821358</a>
+          <a
+            class="cta-button"
+            href="https://www.facebook.com/share/16zB86knaZ/"
+            target="_blank"
+            >Book Now
+          </a>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
