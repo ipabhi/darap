@@ -77,8 +77,11 @@
         font-size: 1.2rem;
         transition: color 0.3s ease;
       }
+      .mob-only {
+        margin-bottom: 0.5rem;
+      }
       .phone-content .fa-phone {
-        margin-left: 6px;
+        margin-right: 0.25rem;
         color: #ffcc00;
       }
       .contact-info .cta-button {
@@ -122,10 +125,14 @@
 
         <div class="contact-info">
           <div class="phone-content">
-            <i class="fa-solid fa-phone"></i>
-            <a href="tel:+91 8240251258">+91 8240251258</a>
-            <i class="fa-solid fa-phone"></i>
-            <a href="tel:+91 8910821358">+91 8910821358</a>
+            <div class="mob-only">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+91 8240251258">+91 8240251258</a>
+            </div>
+            <div class="mob-only">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+91 8910821358">+91 8910821358</a>
+            </div>
           </div>
           <div class="cta-content">
             <a
