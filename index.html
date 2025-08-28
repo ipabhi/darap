@@ -65,11 +65,21 @@
         margin-bottom: 2rem;
         font-weight: 400;
       }
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
       .contact-info a {
         color: white;
         text-decoration: none;
         font-size: 1.2rem;
         transition: color 0.3s ease;
+      }
+      .phone-content .fa-phone {
+        margin-left: 6px;
+        color: #ffcc00;
       }
       .contact-info .cta-button {
         background: #ffcc00;
@@ -111,16 +121,20 @@
         </p>
 
         <div class="contact-info">
-          <i class="fa-solid fa-phone"></i>
-          <a href="tel:+91 8240251258">+91 8240251258</a>
-          <i class="fa-solid fa-phone"></i>
-          <a href="tel:+91 8910821358">+91 8910821358</a>
-          <a
-            class="cta-button"
-            href="https://www.facebook.com/share/16zB86knaZ/"
-            target="_blank"
-            >Book Now
-          </a>
+          <div class="phone-content">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+91 8240251258">+91 8240251258</a>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+91 8910821358">+91 8910821358</a>
+          </div>
+          <div class="cta-content">
+            <a
+              class="cta-button"
+              href="https://www.facebook.com/share/16zB86knaZ/"
+              target="_blank"
+              >Book Now
+            </a>
+          </div>
         </div>
       </div>
     </header>
