@@ -86,16 +86,7 @@ footer .copyright {
   align-items: center;
   height: 100%;
 }
-.modal-backdrop.show {
-  /* backdrop-filter: blur(5px);
-  background-color: rgba(0, 0, 0, 0.6); */
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ) !important; /* reduce visibility with opacity */
-}
+
 .lightbox-img {
   max-width: 90%;
   max-height: 85vh;
