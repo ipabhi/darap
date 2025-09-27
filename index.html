@@ -162,80 +162,124 @@
             <a
               href="https://wa.me/918240251258"
               target="_blank"
-              class="fw-semibold text-dark text-decoration-underline "
+              class="fw-semibold text-dark text-decoration-underline"
             >
               Book your stay
             </a>
           </div>
         </div>
         <div class="row g-3">
-          <!-- Repeatable image items -->
-          <div class="col-6 col-md-4 col-lg-3 img-container">
-            <img
-              src="./asset/IMG-20250920-WA0014.jpg"
-              class="img-fluid rounded shadow-sm img-thumbnail img-yugal"
-              alt="Gallery image 1"
-            />
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 img-container">
+          <!-- Gallery Item -->
+          <div class="col-6 col-md-4 col-lg-3">
             <img
               src="./asset/IMG_20250922_162656.jpg"
-              class="img-fluid rounded shadow-sm img-thumbnail img-yugal"
-              alt="Gallery image 2"
+              alt="Gallery Image"
+              class="gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              onclick="showImage(this.src)"
             />
           </div>
-          <div class="col-6 col-md-4 col-lg-3 img-container">
+          <div class="col-6 col-md-4 col-lg-3">
             <img
-              src="./asset/IMG_20250922_163103.jpg"
-              class="img-fluid rounded shadow-sm img-thumbnail img-yugal"
-              alt="Gallery image 3"
+              src="./asset/IMG-20250920-WA0014.jpg"
+              alt="Gallery Image"
+              class="gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              onclick="showImage(this.src)"
             />
           </div>
-          <div class="col-6 col-md-4 col-lg-3 img-container">
-            <img
-              src="./asset/IMG_20250922_163247.jpg"
-              class="img-fluid rounded shadow-sm img-thumbnail img-yugal"
-              alt="Gallery image 4"
-            />
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 img-container">
-            <img
-              src="./asset/IMG_20250922_163402.jpg"
-              class="img-fluid rounded shadow-sm img-thumbnail img-yugal"
-              alt="Gallery image 5"
-            />
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 img-container">
-            <img
-              src="./asset/IMG-20250920-WA0041.jpg"
-              class="img-fluid rounded shadow-sm img-thumbnail img-yugal"
-              alt="Gallery image 6"
-            />
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 img-container">
-            <img
-              src="./asset/IMG-20250920-WA0020.jpg"
-              class="img-fluid rounded shadow-sm img-thumbnail img-yugal"
-              alt="Gallery image 6"
-            />
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 img-container">
+          <div class="col-6 col-md-4 col-lg-3">
             <img
               src="./asset/IMG-20250920-WA0028.jpg"
-              class="img-fluid rounded shadow-sm img-thumbnail img-yugal"
-              alt="Gallery image 6"
+              alt="Gallery Image"
+              class="gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              onclick="showImage(this.src)"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./asset/IMG-20250920-WA0020.jpg"
+              alt="Gallery Image"
+              class="gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              onclick="showImage(this.src)"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./asset/IMG-20250920-WA0041.jpg"
+              alt="Gallery Image"
+              class="gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              onclick="showImage(this.src)"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./asset/IMG_20250922_163247.jpg"
+              alt="Gallery Image"
+              class="gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              onclick="showImage(this.src)"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./asset/IMG_20250922_163402.jpg"
+              alt="Gallery Image"
+              class="gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              onclick="showImage(this.src)"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./asset/IMG_20250922_163103.jpg"
+              alt="Gallery Image"
+              class="gallery-img"
+              data-bs-toggle="modal"
+              data-bs-target="#lightboxModal"
+              onclick="showImage(this.src)"
             />
           </div>
         </div>
       </div>
     </section>
+    <!-- Bootstrap Modal (Lightbox) -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content" id="lightboxContainer">
+          <i class="fas fa-times lightbox-close" id="lightboxClose"></i>
+          <img
+            id="lightboxImage"
+            src=""
+            alt="Expanded view"
+            class="lightbox-img"
+          />
+        </div>
+      </div>
+    </div>
     <section class="bg-light">
       <div class="container">
         <div class="mb-4 text-center contact-info">
-          <a href="tel:+918240251258" class="text-secondary text-decoration-none me-3">
+          <a
+            href="tel:+918240251258"
+            class="text-secondary text-decoration-none me-3"
+          >
             <i class="fa-solid fa-phone me-2"></i>+91 8240251258
           </a>
-          <a href="tel:+918910821358" class="text-secondary text-decoration-none">
+          <a
+            href="tel:+918910821358"
+            class="text-secondary text-decoration-none"
+          >
             <i class="fa-solid fa-phone me-2"></i>+91 8910821358
           </a>
         </div>
@@ -386,10 +430,18 @@
       <div class="container">
         <!--fcbk youtube link-->
         <div class="mb-2 text-center contact-info">
-          <a href="https://www.facebook.com/share/1BXiZeEzSf/" target="_blank" class="text-white text-decoration-none me-3">
+          <a
+            href="https://www.facebook.com/share/1BXiZeEzSf/"
+            target="_blank"
+            class="text-white text-decoration-none me-3"
+          >
             <i class="fa-brands fa-square-facebook fa-lg"></i>
           </a>
-          <a href="https://youtube.com/@yugalhomestay?si=qD1gmEznqzjxtu17" target="_blank" class="text-white text-decoration-none">
+          <a
+            href="https://youtube.com/@yugalhomestay?si=qD1gmEznqzjxtu17"
+            target="_blank"
+            class="text-white text-decoration-none"
+          >
             <i class="fa-brands fa-youtube fa-lg"></i>
           </a>
         </div>
@@ -397,5 +449,39 @@
           &copy; 2025 Yugal Homestay. All rights reserved.
         </p>
       </div>
+    </footer>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+      const lightboxModal = document.getElementById('lightboxModal');
+      const lightboxImage = document.getElementById('lightboxImage');
+      const lightboxClose = document.getElementById('lightboxClose');
+      const lightboxContainer = document.getElementById('lightboxContainer');
+      const modalInstance = new bootstrap.Modal(lightboxModal);
+
+      function showImage(src) {
+        lightboxImage.src = src;
+      }
+
+      // Close when clicking X
+      lightboxClose.addEventListener('click', () => {
+        modalInstance.hide();
+      });
+
+      // Close on Esc key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          modalInstance.hide();
+        }
+      });
+
+      // Close when clicking outside the image
+      lightboxContainer.addEventListener('click', (e) => {
+        if (e.target === lightboxContainer) {
+          modalInstance.hide();
+        }
+      });
+    </script>
   </body>
 </html>
